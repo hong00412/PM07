@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media</title>
+</head>
+<body>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/HTtGNBx9Hos" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!--  ? width : 너비
+          ? height: 높이
+          ? arrow: 유튜브에서 사용하는 기본적인 속성들을 사용할 수 있는 명령들
+          ?     -> 이 중 gyroscope는 휴대폰을 세로에서 가로로 전환했을 때 화면도 자동으로 바뀌는 걸 명령 -->
+
+    <embed src="https://www.youtube.com/embed/HTtGNBx9Hos" width="560" height="315">
+    <!--  ? embed는 iframe 태그를 조금 보완하기 위해 만들어진 태그 -->
+
+    <video width="560" height="315" autoplay controls loop muted poster="images/sorry.jpg">
+        <source src="mp4/SampleVideo_1280x720_1mb.mp4">
+        <!-- <source src="mp4/SampleVideo_1280x720_1mb.avi">
+        <source src="mp4/SampleVideo_1280x720_1mb.ogg">
+        <source src="mp4/SampleVideo_1280x720_1mb.wmv"> -->
+        <!--  ? 어떤 영상이 화질이 좋은지 비교해서 사용할 수 있음 -->
+    </video>
+    <!--  ? autoplay: 자동재생
+          ? controls: 재생영역에 제어버튼 확성화(작성 안하면 재생버튼 보이지 않음)
+          ? loop: 반복재생(단, 영상의 시작과 끝이 자연스러워야 loop 속성을 사용하기 좋음)
+          ? muted: 영상이 소리 없이 재생됨
+          ? poster: 로딩될 때(영상이 시작되기 전) 대체 이미지 띄워줌(필수)   -->
+    <audio controls autoplay muted>
+        <source src="mp3/SampleAudio_0.4mb.mp3">
+        <!--  ? video와 크게 다를 것 없고 audio에서는 source를 쓸 때 확장자 구분이 아니라 용량 구분으로 많이 사용함. -->
+    </audio>
+
+    <!--
+            * autoplay는 video, audio 동일 속성값, 자동 재생을 시킵니다.     
+            * controls는 video, audio 동일 속성값, 재생영역에 제어버튼을 활성화 하는 속성값. 
+            * loop는 video, audio 동일 속성값, 반복 재생을 시키는 속성값. 
+            * preload는 video, audio 동일 속성값, 스트리밍 방식이 아닌 백그라운드 다운로드를 통해 재생. 
+            * muted는 video, audio 동일 속성값, 미디어 객체를 불러왔을때, 초기 설정을 mute 상태로 불러오는 속성값. 
+            * src는 video, audio 동일 속성값, 미디어 객체를 지정하는 속성값. 
+            * poster 는 video 전용 속성값, video객체를 불러오지 못할 때, 대체 이미지를 출력 시키는 속성값`. 
+            * width, height는 video 전용 속성값, video 객체 영역의 크기를 정하는 속성값. 
+        -->
+
+</body>
+</html>
