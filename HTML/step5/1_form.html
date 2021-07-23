@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form Tag</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>HTML4 Input</legend>
+            <ul>
+                <li>
+                <input type="text" title="텍스트입력" maxlength="5">
+                <!--  ? title="blah"를 추가하면 input이 무슨 역할을 하는지 안내메모가 표시됨
+                      ? (시각장애인 사용자에게 소리로도 알려주기 때문에 중요함)
+                      ?    -> title을 적으면 input에 마우스 커서를 올려놓을 때 우측 하단에 title 메모가 뜸
+                      ? maxlength는 사용자가 입력하는 값의 갯수를 제한시킬 수 있다. -->
+                </li>
+                <li>
+                    <input type="password" title="비밀번호입력" maxlength="8">
+                    <!--  ? input:password는 입력 글자가 보이지 않게끔 설정되어 있음(도트화 되어 입력) -->
+                </li>
+                <li>
+                    <input type="radio" name="radioGroup" id="btn_radio1">
+                    <label for="btn_radio1">항목1</label>
+                    <input type="radio" name="radioGroup" id="btn_radio2">
+                    <label for="btn_radio2">항목2</label>
+                    <input type="radio" name="radioGroup" id="btn_radio3">
+                    <label for="btn_radio3">항목3</label>
+                    <input type="radio" name="radioGroup" id="btn_radio4">
+                    <label for="btn_radio4">항목4</label>
+                </li>
+                <!--  ? input:radio는 or 선택을 할 때 사용
+                      ?     -> name으로 그룹을 지어준 다음 선택을 하게 되면 동일한 name값을 가진 input:radio는 중복선택이 불가능
+                      ? label은 input이 무슨 역할을 하는지 알려주는 역할이기 때문에 input 앞에 오는게 좋음
+                      ?     -> label에 있는 for와 input에 있는 id 값이 같을 경우 두 가지가 연결이 되어 label을 눌렀을 때도 input이 선택됨
+                      ?     -> label은 서버로 전송되는 데이터가 아닌 단순히 input의 id를 감싸 무슨 용도인지 알려주는 역할 -->
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>
