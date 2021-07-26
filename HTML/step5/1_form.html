@@ -19,7 +19,7 @@
                       ? maxlength는 사용자가 입력하는 값의 갯수를 제한시킬 수 있다. -->
                 </li>
                 <li>
-                    <input type="password" title="비밀번호입력" maxlength="8" required>
+                    <input type="password" title="비밀번호입력" maxlength="8">
                     <!--  ? input:password는 입력 글자가 보이지 않게끔 설정되어 있음(도트화 되어 입력) -->
                 </li>
                 <li>
@@ -55,7 +55,7 @@
                 <!--  ? 여러 줄을 입력할 수 있는 텍스트 상자인 textarea는 cols로 가로 입력 너비, rows로 세로 입력 너비의 초기값을 설정할 수 있다.
                       ?     -> 단, 주의사항은 pre와 마찬가지로 입력한 그대로를 보여주기 때문에 초기 데이터를 넣을 때는 공백 부분에 유의해야 한다. -->
                 <li>
-                    <select name="" id="" multiple size="5" required>
+                    <select name="" id="" multiple size="5">
                         <option value="">직업선택</option>
                         <optgroup label="실업자">
                             <option value="job">무직</option>
@@ -85,7 +85,67 @@
                     <!--  ? input:button은 굉장히 중요함(value에 입력하는 문구가 버튼에 입력됨. 웹에서 굉장히 많이 쓰임)
                           ?  <button>태그가 있는데 input과 맞다 틀리다의 개념은 없으나 하이브리드 앱에서는 보통 button, 사이트는 input:button을 사용 -->
                 </li>
+                <li>
+                    <input type="file">
+                    <!--  ? input:file은 완성형 input(할 일이 정해져있음)
+                          ? value를 사용하더라도 버튼의 문구가 바뀌거나 할 수 없고 버튼에 스타일을 넣는게 제한적
+                          ? input type="file" 뒤에 무언가 쓸 필요가 없음(ex_id, value, name...)
+                          ? 파일 첨부 기능 -->
+                </li>
+                <li>
+                    <input type="submit" value="확인">
+                    <!--  ? input:submit 은 확인 버튼으로 많이 쓰임
+                          ?     -> 데이터를 입력한 상태에서 그 데이터를 서버로 보내려면 submit을 사용 -->
+                </li>
+                <li>
+                    <input type="reset" value="취소">
+                    <!--  ? input:reset 은 취소버튼으로 많이 쓰임
+                          ?     -> submit버튼과 반대개념, 누르게 되면 입력한 데이터들이 초기화됨 -->
+                </li>
             </ul>
+        </fieldset>
+        <fieldset>
+            <legend>HTML5 Input</legend>
+            <label for="userName">이름 : </label>
+            <input type="text" id="userName" placeholder="이름을 입력하세요(8자 미만)" maxlength="7" readonly required autofocus>
+            <!--  ? input:text에서 placeholder를 적용하면 상자에 내용이 입력되고 텍스트를 입력 하는 순간 사라짐(임시텍스트)
+                  ?     -> 사용자에게 어떤 값을 입력하라고 알려주는 예시(접근성에 해당하지 않기 때문에 의존하면 안 되고 title이나 label 적용 해야함)
+                  ? required를 입력하면 빈 칸인 상태에서 submit을 클릭하게 되면 입력하라고 알림이 뜸(필수 입력값 속성)
+                  ? autofocus를 입력하면 자동으로 그 해당하는 input에 커서가 활성화
+                  ?     -> but 자동으로 포커스가 맞춰지기 때문에 시각장애인에게 선택적인 사항에서 위험해질 수 있음
+                  ? readonly를 입력하게 되면 임의로 작성을 할 수가 없음(오로지 읽는 것만 가능)
+                  ?     -> 사용자들이 접근을 하면 안 되고 안내만 받아야 하는 값에 사용(쇼핑몰 상품 금액, 수량에 따른 결제값 등) -->
+            <input type="email" placeholder="example@example.com">
+            <!--  ? input:email을 입력하면 text랑 동일하게 보여지는데 나눈 이유는 분명함
+                  ?     -> 타블렛이나 스마트폰에서 사용할 경우 일반 키패드를 바라봤을 때 @나 .com이 키패드에 자동으로 적용됨
+                  ?     -> so, 안나오는 경우에는 단순히 input:text로 작성했거나 @만 안나왔을 경우에는 input:url을 사용한 것 -->
+            <input type="url" placeholder="https//example.com">
+            <!--  ? input:url로 설정하면 모바일에서 해당 필드에 focus 되었을 때, 키보드에 영문과 .com버튼이 생기고 누르고 있으면 타도메인 설정 가능 -->
+            <input type="number" min="0" max="10" step="2" value="0">
+            <!--  ? input:number는 상하버튼으로 숫자를 기입하는 스핀박스를 생성
+                  ? -> min(최소값), max(최대값), step(넘어가는 단위), value(시작점)을 설정할 수 있고 사용자가 임의로 숫자 지정도 가능
+                  ? -> 사용자가 max값소다 더 높게, min 값보다 더 낮게 설정할 경우 "값은 @ 이하/이상이어야 합니다"라는 안내메모가 나옴 -->
+            <input type="range" min="-5" max="5" step="1" value="0">
+            <!--  ? input:range 는 nuber와 구조가 비슷하지만 범위를 조정하기 때문에 목적이 다름 -->
+            <input type="date" name="" id="">
+            <!--  ? input:date를 입력하면 날짜를 지정할 수 있는 바가 생김(우측에 달력 버튼도 생성)
+                  ?   -> css를 이용하여 꾸미지 않으면 window 기반 달력이 열림 -->
+            <input type="month" name="typeMonth" />  
+            <!-- 연도,월 선택 ie10 이하 지원불가(수동입력)-->
+            <input type="week" name="typeWeek" />
+            <!-- 연도,주 선택 ie10 이하 지원불가(수동입력)-->
+            <input type="time" name="typeTime" />   
+            <!-- 시간 입력 ie10 이하 지원불가(수동입력)-->
+            <input type="datetime" name="typeDatetime" />
+            <!-- 대부분 브라우저 지원불가-->
+            <input type="datetime-local">
+            <!-- 연도,월,날짜,시간 선택 ie10 이하 지원불가(수동입력)-->
+            <input type="search" placeholder="검색어를 입력하세요." autocomplete="on">
+            <!--  ? input:search는 autocomplete="on"을 입력했을 때 연관검색어를 만들어낼 수 있음(자동완성기능)
+                  ?     -> safari 환경에서는 css 적용이 안됨 그냥 기본형으로 사용해야 함 -->
+            <label for="typeColor">색상선택 : </label>
+            <input type="color" id="typeColor">
+            <!--  ? input:color는 클릭했을 때 color picker가 나옴 -->
         </fieldset>
     </form>
 </body>
