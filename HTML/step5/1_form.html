@@ -74,6 +74,17 @@
                       ? option에 value값을 넣은 후 적용후 select에 required 속성을 넣으면 필수 선택지가 되어 선택을 안할 경우 입력하라는 경고가 나옴
                       ?     -> value는 서버에 전송되는 실제 데이터이기 때문에 개인정보 등을 담으면 안됨
                       ? select에 multiple size="@"를 적으면 size에 입력한 숫자만큼만 항목을 보여주고 Ctrl+클릭 했을 때 중복선택이 가능 -->
+                <li>
+                    <input type="image" src="https://via.placeholder.com/100x50?text=button" alt="undefined">
+                    <!--  ? input:image에서 placeholder로 임시이미지 생성 후 "?text=button"을 입력하면
+                          ?     그 안에 button이 입력됨('text=' 뒤에 있는 text가 입력된다고 보면 됨)
+                          ? 버튼을 사용을 해야 하는데 css가 제대로 접근이 안되고 버튼을 디자인해서 만들고 싶을 때 사용하는 방법 -->
+                </li>
+                <li>
+                    <input type="button" value="비밀번호확인">
+                    <!--  ? input:button은 굉장히 중요함(value에 입력하는 문구가 버튼에 입력됨. 웹에서 굉장히 많이 쓰임)
+                          ?  <button>태그가 있는데 input과 맞다 틀리다의 개념은 없으나 하이브리드 앱에서는 보통 button, 사이트는 input:button을 사용 -->
+                </li>
             </ul>
         </fieldset>
     </form>
