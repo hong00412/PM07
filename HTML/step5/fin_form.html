@@ -31,7 +31,9 @@
         #tickmarks option:first-of-type{
             margin-left: 0;
         }
-        
+        .wrap form div{
+            width: 50%; margin: 0 auto; text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -167,8 +169,28 @@
                             </datalist>
                         </td>
                     </tr>
+                    <tr>
+                        <th>
+                            <label for="userSNS">SNS</label>
+                        </th>
+                        <td>
+                            <input type="url" name="" id="userSNS">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="userComment">가입인사</label>
+                        </th>
+                        <td>
+                            <textarea name="" id="userComment" cols="30" rows="10"></textarea>
+                        </td>
+                    </tr>
                 </table>
             </fieldset>
+            <div>
+                <input type="submit" value="확인">
+                <input type="reset" value="취소">
+            </div>
         </form>
     </div>
 </body>
