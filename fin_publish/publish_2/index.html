@@ -36,6 +36,21 @@
     </header>
     <!--  ? header fin -->
 
+    <nav>
+        <div>
+            <ul>
+                <li><a href="#">Top Sales</a></li>
+                <li><a href="#">Brand Focus</a></li>
+                <li><a href="#">Hi-tech</a></li>
+                <li><a href="#">Best Sellers</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+            <input type="search" placeholder="I’m looking for ..." title="search">
+        </div>
+    </nav>
+    <!--  ? slideNav fin -->
+
     <section>
         <h2>Slider</h2>
         <div>
@@ -65,5 +80,33 @@
         </div>
     </section>
     <!--  ? slider fin -->
+
+    <div>
+        <form>
+            <fieldset>
+                <label for="sb_Select">SORT BY :</label>
+                <span class="selectBox">
+                    <select id="sb_Select" title="sortBySelect">
+                        <option>BEST MATCH</option>
+                    </select>
+                </span>
+                <label for="sb_Keywords">KEYWORDS</label>
+                <input type="search" id="sb_Keywords">
+                <label for="range_minprice">PRICE</label>
+                <input type="text" id="range_minprice">
+                <span>-</span>
+                <input type="text" id="range_maxprice" title="inputMaxPrice">
+                <input type="checkbox" id="freeShipCheck">
+                <label for="freeShipCheck">Free Shipping</label>
+                <label for="ship_select">SHIP TO :</label>
+                <span class="selectBox">
+                    <select id="ship_select">
+                        <option>USA</option>
+                    </select>
+                </span>
+            </fieldset>
+        </form>
+        <!--  ? sortBar fin -->
+    </div>
 </body>
 </html>
