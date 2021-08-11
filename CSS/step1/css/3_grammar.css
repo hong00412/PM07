@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+}
+h1{
+    font-size: 14px; color: red;
+}
+img{
+    width: 250px; height: 250px; border: 1px solid blue;
+}
+ul,ol,dl{
+    list-style: none; color: red;
+}
+/*  ? 무언가 묶음 지어서 css를 적용할 때는 ','를 사용
+    ?   -> ul, ol, dl = ul/ol/dl을 모두 선택하는 것 */
