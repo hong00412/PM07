@@ -26,3 +26,25 @@ p.word{
     ?   -> ex_동해물과 백두산이 마르고
     ?         닳도록
     ?   -> 이런 식으로 단어가 애매하게 떨어져야 할 때 사용 */
+
+p[class^='w_']{
+    border: 1px solid red; width: 150px;
+}
+/*  ? [class^='className']을 입력하면 className에서 앞쪽에 공통된 단어를 모두 잡아줌 */
+p.w_normal{
+    white-space: normal; line-height: 21px;
+}
+p.w_nowrap{
+    white-space: nowrap; text-overflow: ellipsis; overflow-x: hidden;
+}
+/*  ? white-space: normal - 기본값으로 설정(글자가 width에 갇히면서 다 보여짐)
+    ? white-space: nowrap - 컨텐츠를 묶어놓는 게 wrapping인데 랩핑을 안하겠다는 것
+
+    ? text-overflow: clip - nowrap을 썼을 때 텍스트박스 안까지만 보여줌(내용이 뚝 끊김)
+    ? text-overflow: ellipsis - white-space: nowrap을 썼을 때 텍스트박스 안까지만 보여주기는 하나
+    ?                            뒤에 내용이 더 있다는 걸 ...을 붙이면서 알려줌
+
+    ? overflow: hidden - 이 속성값을 써야 text-overflow가 정상적으로 적용 됨(내용숨김)
+    ? overflow: scroll - 텍스트박스 안 까지만 보여주지만 그 뒤 내용을 볼 수 있게 스크롤이 적용
+    ?                    (가로, 세로 스크롤이 모두 적용됨)
+    ? overflow-x: scroll - 스크롤이 가로에만 적용됨(세로는 overflow-y: scroll) */
