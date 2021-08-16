@@ -68,3 +68,12 @@ p.w_nowrap{
     * bottom : 아래쪽 정렬
     * % : 퍼센트로 정렬 위치를 지정
 */	
+
+p.t_indent{
+    text-indent: 100px; font-size: 35px;
+}
+/*  ? text-indent: 들여쓰기(-9999px을 사용할 경우 text를 없앨 수 있음(ex_버튼 텍스트 없애기) */
+button.test{
+    background: url('https://via.placeholder.com/150x50?text=blahbalhbutton') no-repeat left top;
+    width: 150px; line-height: 50px; border: none; font-size: 12px; text-indent: -9999px;
+}
