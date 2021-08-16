@@ -10,3 +10,19 @@ h3{
     font-family: 'Nanum Gothic'; font-size: 48px; font-weight: 800;
 }
 /*  ? font-family는 font의 종류를 설정 */
+
+p{
+    font-family: 'Nanum Gothic'; font-size: 14px;
+}
+p.letter{
+    letter-spacing: 10px;
+}
+/*  ? letter-spacing: 자간 */
+p.word{
+    word-spacing: 10px;
+}
+/*  ? word-spacing: 단어간격(space bar 기준)
+    ? 대체적으로 글자가 특정 공간에서 떨어져야 할 때 간혹가다 사용
+    ?   -> ex_동해물과 백두산이 마르고
+    ?         닳도록
+    ?   -> 이런 식으로 단어가 애매하게 떨어져야 할 때 사용 */
