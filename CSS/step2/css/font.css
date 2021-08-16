@@ -77,3 +77,37 @@ button.test{
     background: url('https://via.placeholder.com/150x50?text=blahbalhbutton') no-repeat left top;
     width: 150px; line-height: 50px; border: none; font-size: 12px; text-indent: -9999px;
 }
+a{
+    display: block;
+}
+a.t_deco_N{
+    text-decoration: none; text-transform: none; color: #090;
+}
+a.t_deco_U{
+    text-decoration: underline; text-transform: lowercase; color: skyblue;
+    margin-bottom: 15px;
+}
+a.t_deco_O{
+    text-decoration: overline; text-transform: capitalize; color: #96c;
+}
+a.t_deco_T{
+    text-decoration: line-through; text-transform: uppercase; color: orange;
+}
+/* 
+    ? text-transform: lowercase는 모두 소문자로 바꿔주는 것
+    ? text-transform: capitalize는 단어 첫번째가 대문자로 바뀜(★ 많이 익숙해야 함)
+    ? text-transform: uppercase는 모두 대문자로 바꿔주는 것
+    ? text-decoration: overline은 글자의 위에 줄이 생김
+    ? text-decoration: unnderline은 글자의 밑에 줄이 생김
+    ? text-decoration: line-through는 글자의 가운데에 줄이 생김
+ */
+p.DR_ltr{
+    direction: ltr;
+}
+p.DR_rtl{
+    direction: rtl;
+}
+/*
+   ? direction: ltr; 은 컨텐츠가 왼쪽부터 순서대로 나옴(left to right)
+   ? direction: rtl; 은 컨텐츠가 오른쪽부터 역방향으로 나옴(right to left)
+*/
