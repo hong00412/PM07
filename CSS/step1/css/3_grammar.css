@@ -12,3 +12,17 @@ ul,ol,dl{
 }
 /*  ? 무언가 묶음 지어서 css를 적용할 때는 ','를 사용
     ?   -> ul, ol, dl = ul/ol/dl을 모두 선택하는 것 */
+
+ul li{
+    font-size: 25px; font-weight: bold;
+}
+ol li{
+    font-size: 12px; text-decoration: underline;
+}
+/*  ? 하위 대상(A 띄어쓰기 B)을 지목하여 스타일을 설정할 수 있다. */
+
+dl dt,
+dl dd{
+    font-size: 35px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/*  ? 하위 대상 동시설정(grouping) */
