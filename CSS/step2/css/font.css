@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Dokdo&family=Hi+Melody&family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+h1{
+    font-family: 'Dokdo'; font-size: 72px;
+}
+h2{
+    font-family: 'Hi Melody'; font-size: 56px;
+}
+h3{
+    font-family: 'Nanum Gothic'; font-size: 48px; font-weight: 800;
+}
+/*  ? font-family는 font의 종류를 설정 */
