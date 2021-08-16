@@ -48,3 +48,23 @@ p.w_nowrap{
     ? overflow: scroll - 텍스트박스 안 까지만 보여주지만 그 뒤 내용을 볼 수 있게 스크롤이 적용
     ?                    (가로, 세로 스크롤이 모두 적용됨)
     ? overflow-x: scroll - 스크롤이 가로에만 적용됨(세로는 overflow-y: scroll) */
+
+.v_alignTest span{
+    vertical-align: 150%;
+}
+.v_alignTest img{
+    vertical-align: middle;
+}
+/*  ? vertical-align은 inline속성 태그에 넣으면 적용되지 않음
+    ?   -> 단, %로는 적용시킬 수 있음
+    ? inline속성 옆에 규격을 가지고 있는 태그에 적용하면 가능 */
+/*
+    * baseline: 문자의 밑선에 맞추어 정렬
+    * middle: 문자의 중앙을 기준으로 해서 정렬
+    * sub : 아래첨자
+    * super : 위 첨자
+    * text-top:문자의 윗선을 밑선으로 해서 정렬
+    * top: 위쪽에 정렬
+    * bottom : 아래쪽 정렬
+    * % : 퍼센트로 정렬 위치를 지정
+*/	
