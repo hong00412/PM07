@@ -1,7 +1,7 @@
 body{
     margin: 0;
     background-image: url('../images/BackgroundFront.png'), url('../images/BackgroundBack.png');
-    background-size: 100%;
+    background-size: 70%;
 /* 
     ? cover : cover 는 무조건 꽉채움.
     ? contain : contain은 종횡비 로 꽉채움.(너비나 높이 중 먼저 한계선에 닿는 부분 우선)
@@ -17,4 +17,24 @@ body{
     ? 수직 반복 repeat-y, 수평 반복 repeat-x
 	? 반복안함은 no-repeat
 */
+
+    background-position: center 150px;  
+/* 
+    ? background-position: center;(x축 y축 모두 center)
+    ? background-position은 x축, y축 으로 구분하는데 하나만 적을경우 x축, y축 동일적용
+    ? left, center, right - xAxis
+    ? top, center, bottom - yAxis
+    ? %,px 등의 단위도 사용가능
+*/
+
+    background-attachment: fixed;
+    height: 3000px;
 }
+div{
+    height: 2000px;
+}
+
+/* ? background-clip: Mask개념(photoshop의 clipping mask)
+   ?  background-origin은 사용할 일이 없다고 하심..
+   ?  background-blend-mode: photoshop의 blend Mode 효과(overlay, screen, multifly, lighten...)
+   ?      -> 위의 배경 구조가 분리되어 있는 상태에서 페이지상 위쪽에 있는 배경에 blend를 걸면 적용됨 */
