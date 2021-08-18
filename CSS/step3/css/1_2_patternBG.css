@@ -1,0 +1,18 @@
+html, body, .wrap{
+    height: 100%;
+}
+body, p{
+    margin: 0;
+}
+.wrap{
+    background-image: url('../images/pt.gif');
+}
+.wrap p{
+    background-color: #0cf; padding: 20px; margin-bottom: 20px;
+}
+.wrap button{
+    line-height: 50px; padding: 0 40px; color: white; border: none;
+    background: url('../images/pt_ex.png') repeat-x left top;
+}
+/*  ? background: background-image background-repeat background-position;
+    ?   -> css 여러 속성을 하나로 줄여서 쓰는 방법을 숏핸드(shortHand)라고 함 */
