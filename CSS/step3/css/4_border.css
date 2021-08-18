@@ -1,3 +1,30 @@
 div{
     width: 300px; height: 150px; margin-bottom: 10px;
 }
+
+.singleBox{
+    border: 3px solid #60f;
+}
+/*  ? border: border-width border-style border-color */
+
+.multiBox{
+    border-top: 1px solid darkgreen;
+    border-right: 3px dotted salmon;
+    border-bottom: 10px dashed darkorchid;
+    border-left: 15px double lightseagreen;
+/* ? solid : 직선 / dotted : 점선(····) / dashed : 자르는선(선이 있는 점선(----)) / double : 두줄의 선(이중선) */
+
+    /* border-width: 5px 15px 25px 20px; */
+    /*  ?            상  우   하    좌 */
+    /* border-width: 10px 20px; */
+    /*  ?            상하  좌우 */
+    /* border-width: 35px 25px 20px; */
+    /*  ?            상   좌우  하 */
+    /* border-style: dashed;
+    border-color: pink slateblue; */
+    /*  ? border-style과 border-color도 위 width와 동일하게 설정이 가능 */
+}
+/*
+    * border - 숏핸드방법(ex_border: 1px solid salmon)
+    * border-top , border-right, border-bottom, border-left 로 설정 할 수 있다.
+*/
