@@ -1,0 +1,19 @@
+*{
+    margin: 0; padding: 0;
+}
+/*  ? *이 의미하는 건 html의 전체 태그를 잡겠다는 의미 */
+html, body{
+    height: 100%;
+}
+body{
+    background: url('../images/example.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+body > article{
+    background-color: white;
+    margin-bottom: 15%; padding: 5%;
+}
+body > article h2{
+    font-size: 35px; margin-bottom: 20px;
+}
