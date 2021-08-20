@@ -1,0 +1,15 @@
+a{
+    text-decoration: none; font-size: 35px;
+    word-spacing: 15px; display: inline-block;
+}
+a:link{color: black;}
+/*  ? a:link{}는 a태그의 기본값이라고 보면 됨 */
+
+a:visited{color: red;}
+/*  ? a:visited{}는 a태그를 한번 이상 클릭한 적이 있는 것(방문했다는 의미) */
+
+a:hover{color: pink;}
+/*  ? a:hover{}는 마우스 over상태를 의미(마우스를 태그에 올려놓았을 때(클릭은X)) */
+
+a:active{color: green;}
+/*  ? a:active{}는 마우스로 a태그를 누르고 있는 상태(눌렀다 떼기 전까지의 시간) */
