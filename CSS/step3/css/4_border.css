@@ -35,3 +35,24 @@ div{
 .ridgeBox{
     border: 20px ridge #666;
 }
+.insetBox{
+    border: 20px inset #60f;
+}
+.outsetBox{
+    border: 20px outset #60f;
+}
+.radiusBox{
+    border: 5px solid black;
+    border-radius: 10px;
+}
+.circleBox{
+    width: 200px; height: 200px; border: 10px solid black;
+    border-radius: 105px; text-indent: -9999px;
+}
+/*
+    ? border-radius: @px;
+    ?   -> 모서리를 둥글게 만들어 줌(border-radius:10px; = 10px만큼 둥글게)
+    ?   -> 동그라미로 만들고 싶을 경우 width와 height가 값이 같아야하고
+    ?       그 width,height 수치의 절반을 radius로 적용하면 됨
+    ?       (width와 height는 border, padding의 영향을 받는다)
+*/
