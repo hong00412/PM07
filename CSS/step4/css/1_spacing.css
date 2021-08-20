@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    /* padding: 10px 10px 0px 10px; */ /* ? 정답 */  
+}
+.firstDiv{
+    /* margin: 10px; */
+    margin-top: 10px; /* ! body 입장에서 padding으로 들어가야 하기 때문에 잘못된 케이스*/
+    margin-right: 10px; /* ! body 입장에서 padding으로 들어가야 하기 때문에 잘못된 케이스*/
+    margin-bottom: 10px;
+    margin-left: 10px; /* ! body 입장에서 padding으로 들어가야 하기 때문에 잘못된 케이스*/
+    background-color: #555;
+}
+.firstDiv article{
+    background-color: #039; color: white;
+}
+.secondDiv{
+    background-color: #bbb;
+    margin: 10px 15px;
+}
+/*  ? margin이 겹치게 되면 서로 상쇄시키는 특성이 있음
+    ?   -> margin을 부여할 때는 꼭 방향성을 가지고 적용시켜야 함
+    ?   -> X축의 동일선상 태그를 밀 때는 margin을 왼쪽으로, Y축의 동일선상 태그를 밀 때는 margin을 아래쪽으로! */
+.secondDiv article{
+    background-color: #930; margin: 15px;
+}
+/* 
+    ! .secondDiv article에 적용한 margin 중 bottom이 비적용 된 것을 확인 할 수 있다.
+    !   -> 부모 div 공간을 뚫고 margin이 적용됨(경계선너머적용)
+    ? 그렇기 때문에 부모요소(.secondDiv)가 자손요소(.secondDiv article)에게 padding을 사용함이 바람직 하다.
+*/
+
+.centerDiv{
+    width: 300px; border: 1px solid blue;
+    padding: 10px; margin: 0 auto; text-align: center;
+}
+/*  ? margin: 0 auto;를 사용하게 되면 브라우저 크기와 해당 태그의 크기를 계산해 뺀 후
+    ?   나머지 공간값을 반으로 나누어 양쪽에 부여하여 가운데로 보내준다
+    ?       -> 단, display: block; 속성의 태그에만 사용 가능 */
+
+.centerDiv article{
+    margin: 0 10px; background-color: #f33;
+    color: white; 
+}
+/*
+    ? margin값이 서로 만나면 상쇄되지만 padding값과 margin값이 만나면 충돌돼서 값이 합산됨
+    ? 자식 공간의 margin과 부모공간의 padding 은 섞이지 않는다. 무조건 가산됨.
+ */
+.paddingDiv{
+    width: 100px; padding: 10px 20px; border: 3px solid #333;
+    background-color: #ff3; box-sizing: border-box;
+}
+/* 
+      ! box-sizing: border-box; 를 설정하면 padding 및 border의 사이즈는 더이상 width에 가산되지 않는다.  
+      ? recover : content-box;
+*/
