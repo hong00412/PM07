@@ -28,3 +28,10 @@ div{
     * border - 숏핸드방법(ex_border: 1px solid salmon)
     * border-top , border-right, border-bottom, border-left 로 설정 할 수 있다.
 */
+
+.grooveBox{
+    border: 20px groove #666;
+}
+.ridgeBox{
+    border: 20px ridge #666;
+}
