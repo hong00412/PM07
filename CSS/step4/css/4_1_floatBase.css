@@ -4,6 +4,15 @@
 .exam_1 img{
     float: left; margin: 0px 20px 5px 0;
 }
+/* .exam_2{
+    overflow: hidden;
+}
+    ? 부모태그 높이값 되돌리는 방법 1(약간의 편법으로 하는 방법) */
+
+.exam_2:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+/*  ? 부모태그 높이값 되돌리는 방법2(afterCancel이라고 하며 계속 사용할 방법) */
 .exam_2 div{
     width: 50%; border: 5px solid blue; box-sizing: border-box;
     float: left;
