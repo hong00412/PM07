@@ -1,0 +1,33 @@
+*{
+    margin: 0; padding: 0;
+}
+body{
+    width: 960px; margin: 0 auto; background-color: lightyellow;
+}
+header{
+    background-color: lightblue;
+}
+header nav{
+    background-color: mediumaquamarine;
+}
+/* .wrap{
+    background-color: pink;
+} */
+/*  ? float가 익숙해지기 전까지는 부모 태그의 높이값 상실에 대한 부분을 까먹을 수 있기 때문에
+    ?   background-color를 넣어준 후 체크해보는 습관 들이기 */
+.wrap:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+.wrap aside,
+.wrap section{
+    float: left; height: 500px;
+}
+.wrap aside{
+    width: 20%; background-color: salmon;
+}
+.wrap section{
+    width: 80%; background-color: mediumslateblue;
+}
+footer{
+    background-color: greenyellow;
+}
