@@ -1,0 +1,61 @@
+*{
+    margin: 0; padding: 0;
+}
+body{
+    width: 960px; margin: 0 auto;
+}
+header{
+    background-color: pink;
+}
+header:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+header h1,
+header nav{
+    float: left;
+}
+header h1{
+    width: 130px; background-color: red; color: white;
+    font-size: 20px; text-align: center; line-height: 55px;
+}
+header nav{
+    width: 830px; background-color: blue;
+}
+header nav ul{
+    text-align: center;
+}
+header nav ul li{
+    display: inline-block;
+}
+header nav ul li a{
+    color: white; text-decoration: none;
+    display: block; line-height: 55px;
+}
+/*  ? a태그의 기본 display 속성은 inline이기 때문에 본인이 가지고 있는 text만큼의 크기만 가질 수 있다.
+    ?   -> 이렇게 되면 사용자가 클릭하기 어렵기 때문에 본인의 공간을 가질 수 있게 display: block;으로 바꿔주는 것 */
+
+/* section{
+    background-color: green;
+} */
+section:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+section h2{
+    background-color: steelblue;
+}
+section article{
+    width: 33.33%; float: left;
+}
+section article h3{
+    background-color: black; color: white;
+}
+section article ul{
+    list-style: none;
+}
+section article ul li{
+    line-height: 30px;
+}
+footer{
+    background-color: blueviolet; color: white;
+    line-height: 55px; text-align: center;
+}

@@ -1,0 +1,6 @@
+header{
+    background-color: mediumaquamarine; position: relative;
+}
+header .searchBox{
+    position: absolute; right: 0; top: 37px;
+}
