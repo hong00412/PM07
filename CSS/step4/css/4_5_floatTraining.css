@@ -1,0 +1,16 @@
+*{
+    margin: 0; padding: 0;
+}
+ul:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+ul li{
+    float: left; width: 33.33%; border: 1px solid red;
+    box-sizing: border-box; display: block;
+}
+ul li figure img{
+    float: left; margin-right: 2%;
+}
+ul li figure figcaption{
+    border-bottom: 1px solid black;
+}
