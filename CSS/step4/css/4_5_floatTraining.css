@@ -9,8 +9,23 @@ ul li{
     box-sizing: border-box; display: block;
 }
 ul li figure img{
-    float: left; margin-right: 2%;
+    /* float: left; */
+    margin-right: 2%;
 }
 ul li figure figcaption{
     border-bottom: 1px solid black;
+}
+ul li figure img,
+ul li figure figcaption{
+    width: 49%; float: left;
+}
+ul li figure figcaption dl dt{
+    line-height: 50px; font-size: 22px;
+}
+ul li figure figcaption dl dd{
+    line-height: 30px; font-size: 12px;
+    width: 80%; padding-left: 15%;
+}
+ul li p{
+    font-size: 15px;
 }
