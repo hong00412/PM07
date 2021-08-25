@@ -1,19 +1,33 @@
 #wrap{
     width: 300px; height: 200px; margin: 0 auto;
     background-color: #999;
-    /* overflow-y: scroll; */
     position: relative;
+    overflow-y: scroll;
 }
+/*  ? 부모공간에 overflow 속성을 주지 않으면 자손 태그가 부모태그를 벗어나는 순간
+    ?   뚫고 나가버린다 */
 #wrap div{
-    width: 150px; height: 150px; position: absolute;
+    width: 150px; height: 150px;
+    position: absolute;
 }
+/*  ? position: absolute를 주는 순간 본인의 공간을 상실해버리기 때문에
+    ?    꼭 width, height를 규정 해주어야 한다. */
 #wrap .redBox{
-    background-color: red; left: 10px; top: 10px;
+    background-color: red; left: 10px; top: 10px; z-index: 100;
 }
 /*  ? position의 좌표값은 left, right, top, bottom으로 부여한다. */
 #wrap .greenBox{
-    background-color: green; left: 50px; top: 50px;
+    background-color: green; left: 50px; top: 50px; z-index: 10;
 }
 #wrap .blueBox{
-    background-color: blue; left: 300px; top: 300px;
+    background-color: blue; left: 90px; top: 90px; z-index: 1;
 }
+/*
+     ? 좌표의 기준이 될 부모의 객체에 position:relative; 를 선언
+     ? 그것을 기준으로 움직일 자식 객체에게 position:absolute; 를 선언
+     ? 그렇게 되면 부모객체의 위치를 기준으로 자식객체가 움직이게 됨
+    
+     ? 부모객체의 높이를 정해주면 자식객체가 부모객체를 뚫고 나오는 현상을 방지할수있음.
+     ? 만약 잘리는 부분을 scroll 로 처리하고 싶다면 overflow에 scroll을, 잘리게 둘 것이라면
+     ? hidden;을 부여한다.
+*/
