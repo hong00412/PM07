@@ -1,0 +1,21 @@
+html, body{
+    height: 100%;
+}
+body{
+    margin: 0;
+}
+ul, h2{
+    margin: 0; padding: 0;
+}
+aside{
+    width: 20%; background-color: steelblue; height: 100%;
+    position: fixed; left: 0; top: 0;
+}
+section{
+    height: 2000px; background-color: lemonchiffon;
+    padding-left: 20%; width: 80%;
+}
+/*  ? 위 속성에서 padding-left 대신 margin-left를 썼을 경우
+    ?   -> 현재 aside는 position: fixed 상태이므로 section 공간에 영향을 주지 않고 떠있음
+    ?       so, margin을 주게 되면 section이 부모태그인 body를 밀어내는 것이기 때문에
+    ?       잘못된 방법 */
