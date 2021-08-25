@@ -1,17 +1,19 @@
 #wrap{
     width: 300px; height: 200px; margin: 0 auto;
-    background-color: #999; overflow-y: scroll;
+    background-color: #999;
+    /* overflow-y: scroll; */
     position: relative;
 }
 #wrap div{
     width: 150px; height: 150px; position: absolute;
 }
 #wrap .redBox{
-    background-color: red;
+    background-color: red; left: 10px; top: 10px;
 }
+/*  ? position의 좌표값은 left, right, top, bottom으로 부여한다. */
 #wrap .greenBox{
-    background-color: green;
+    background-color: green; left: 50px; top: 50px;
 }
 #wrap .blueBox{
-    background-color: blue;
+    background-color: blue; left: 300px; top: 300px;
 }
