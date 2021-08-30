@@ -61,3 +61,31 @@
 /*  ? '>'는 직계 라인에 있는 태그만 잡을 수 있게 되는데 span같은 경우에는
     ? span 안에 span이 동일하게 적용 되어 가장 안쪽에 있는 span에 까지 css가 적용이 된 것
     ? 이를 버블현상이라고 하며 안 좋은 것중 하나 */
+
+.stringAttrSelector img[src$=png]{
+    width: 100px; height: 100px; border: 3px solid red;
+}
+.stringAttrSelector img[src$=gif]{
+    width: 200px; height: 200px; border: 3px solid green;
+}
+.stringAttrSelector img[src$=jpg]{
+    width: 300px; height: 300px; border: 3px solid blue;
+}
+/* 
+    ?속성값일치선택자.
+    ? ~= : 띄어쓰기 기준. 해당 단어 포함.
+    ? ^= : 해당 단어로 시작하는 것만 선택.
+    ? *= : 해당 단어가 들어가는 모든 대상 선택. (전,후 상관없음.)
+    ? |= : 해당 단어로 시작하거나 -으로 구분되는 대상 선택. 
+    ? $= : 해당 단어로 끝나는 대상 선택.
+*/
+
+.sameSelector h1 ~ h2{
+    background-color: gray;
+}
+/*  ? '~'은 뒤에 있는 모든 것을 잡는 것
+    ?   -> A ~ B = A 뒤에 있는 모든 B를 잡는 것 */
+
+.sameSelector h1 + h2{
+    font-size: 34px; color: violet;
+}
