@@ -1,0 +1,10 @@
+.tagSelector h1{color: #0cf; font-size: 20px;}
+.tagSelector p{color: #0c0; font-size: 15px;}
+.tagSelector span{color: #600; font-size: 22px;}
+/*  ? tagSelector */
+
+.idSelector #paragraph1{font-size: 15px; text-decoration: overline;}
+.idSelector #paragraph2{font-size: 25px; text-decoration: line-through;}
+.idSelector #paragraph3{font-size: 35px; text-decoration: underline;}
+/*  ? id Selector
+    ?   class = .class / id = #id  */
