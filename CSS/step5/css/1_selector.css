@@ -8,3 +8,16 @@
 .idSelector #paragraph3{font-size: 35px; text-decoration: underline;}
 /*  ? id Selector
     ?   class = .class / id = #id  */
+
+.classSelector .f_size{
+    font-size: 20px;
+}
+.classSelector .f_weight{
+    font-weight: bold;
+}
+.classSelector  .f_color{
+    color: steelblue;
+}
+/*  ? class Selector
+    ? html에서 class에 띄어쓰기를 하면 다수 지정할 수 있고
+    ? 그에 해당하는 class만 지정해서 css를 설정할 수 있다. */
