@@ -21,3 +21,43 @@
 /*  ? class Selector
     ? html에서 class에 띄어쓰기를 하면 다수 지정할 수 있고
     ? 그에 해당하는 class만 지정해서 css를 설정할 수 있다. */
+
+.attrSelector fieldset{
+    border: 1px solid #555; background-color: steelblue;
+}
+.attrSelector fieldset legend{
+    border: 1px solid #555; background-color: slateblue; color: yellow;
+    padding: 10px; border-radius: 10px;
+}
+.attrSelector fieldset ul{
+    margin: 0; padding: 0; list-style: none;
+}
+.attrSelector fieldset ul li{
+    font-size: 14px; line-height: 30px;
+}
+.attrSelector fieldset ul li label,
+.attrSelector fieldset ul li input{
+    vertical-align: middle; display: inline-block;
+}
+
+.attrSelector fieldset ul li input[type='text']{
+    background-color: pink; border: 1px solid darkred;
+}
+.attrSelector fieldset ul li input[type='password']{
+    background-color: lightseagreen; border: 1px solid greenyellow;
+}
+.attrSelector fieldset ul li input[type='radio']{
+    width: 25px; height: 25px
+}
+/*  ? attrSelect
+    ?   -> input[type='radio']처럼 attr의 value를 잡아서 지정할 수 있음 */
+
+.directSelector > h1{
+    font-size: 28px; color: slateblue;
+}
+.directSelector > span{
+    font-size: 15px; color: red;
+}
+/*  ? '>'는 직계 라인에 있는 태그만 잡을 수 있게 되는데 span같은 경우에는
+    ? span 안에 span이 동일하게 적용 되어 가장 안쪽에 있는 span에 까지 css가 적용이 된 것
+    ? 이를 버블현상이라고 하며 안 좋은 것중 하나 */
