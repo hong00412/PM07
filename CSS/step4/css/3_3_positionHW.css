@@ -1,0 +1,26 @@
+body{
+    margin: 0; padding-top: 200px;
+}
+header{
+    position: fixed; left: 0; top: 0; z-index: 1;
+    width: 100%; height: 200px;
+    background-color: red; color: white;
+}
+section{
+    position: relative; height: 1000px; background-color: pink;
+}
+section aside,
+section article{
+    position: absolute; height: 100%;
+}
+section aside{
+    background-color: green; width: 20%;
+}
+/*  ? left, right, top, bottom -> 좌표에 대한 설정이 없을 경우 left: 0, top: 0이 기본 */
+section article{
+    background-color: blue; width: 70%; left: 30%;
+}
+footer{
+    text-align: center; background-color: orange;
+    font-size: 30px; padding: 20px;
+}
