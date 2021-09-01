@@ -131,3 +131,45 @@
     float: left; margin: 0; padding: 15px; list-style: none;
     border: 1px solid black;
 }
+.normalSelector ul li:first-child{
+    border-radius: 30px 0 0 30px;
+}
+/*  ? first-child = nth-child(1)과 같은 의미
+    ?   -> nth-child는 선택해준 대상의 부모태그 기준으로 첫번째 자손으로 위치해 있을 때 사용 */
+.normalSelector ul li:last-child{
+    border-radius: 0 30px 30px 0;
+}
+/*  ? last-child = nth-child(7)과 같은 의미(현재 태그 기준이며 무조건 7번이라는 것이 아님)
+    ?   -> nth-child를 지정한 태그의 부모태그 기준으로 마지막 자손을 잡음 */
+
+.normalSelector ul li:nth-child(odd){
+    background-color: darkblue; color: white;
+}
+
+.normalSelector ul li:nth-child(even){
+    background-color: lightpink;
+}
+/*  todo. second h1, h2, h3를 nth-child로 선택*/
+.shapeSelector h3:nth-child(4){
+    color: green;
+}
+.shapeSelector h2:nth-child(5){
+    color: blue;
+}
+.shapeSelector h1:nth-child(6){
+    color: red;
+}
+/*  ? .shapeSelector h1:nth-child(6) = .shapeSelector h1:last-child */
+
+
+.notSelector input:not([type="text"]){
+    background-color: red;
+}
+/*  ? :not() 선택자는 괄호 안에 빼고 싶은 대상을 작성하면 된다.
+    ?   -> not 선택자는 그룹핑 불가능
+    ! ex) 밑의 예시처럼 사용하는 것 불가능
+    !  .notSelector input:not(:nth-child(3)),
+    !  .notSelector input:not(:last-child){
+    !      background-color: green;
+    !  } */
+
