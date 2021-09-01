@@ -89,3 +89,9 @@
 .sameSelector h1 + h2{
     font-size: 34px; color: violet;
 }
+/*  ? '+'는 바로 뒤의 대상을 잡는 것
+    ?   -> A + B = A 바로 뒤에 있는 B를 잡는 것 */
+
+.activeSelector h1{
+    font-size: 12px; color: black;
+}
