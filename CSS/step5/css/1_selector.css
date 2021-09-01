@@ -95,3 +95,8 @@
 .activeSelector h1{
     font-size: 12px; color: black;
 }
+.activeSelector h1:hover{
+    font-size: 24px; color: red; cursor: pointer;
+}
+/*  ? cursor: pointer; 는 마우스의 모양이 텍스트커서나 기본 모양이
+    ? 손가락모양으로 바뀌어야 할 상황일 때 사용 */
