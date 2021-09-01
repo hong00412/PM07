@@ -100,3 +100,26 @@
 }
 /*  ? cursor: pointer; 는 마우스의 모양이 텍스트커서나 기본 모양이
     ? 손가락모양으로 바뀌어야 할 상황일 때 사용 */
+
+.statusSelector input[type='checkbox'] + label{
+    display: inline-block; vertical-align: middle;
+    height: 25px; overflow-y: hidden;
+    transition-duration: 0.75s;
+}
+.statusSelector input[type='checkbox']:checked + label{
+    height: 0px;
+}
+/*  ? input[type='checkbox']:checked 는 check가 되어 있는 상태의
+    ?   checkbox를 선택할 수 있다 */
+
+.statusSelector input[type='text']:enabled{
+    background-color: black; color: white;
+}
+/*  ? input[type='text']:enabled는 동일한 input 속성의 태그 중
+    ? 수정가능한 상태의 input을 선택할 수 있다.(html 태그에도 attr 적용해주어야 함) */
+
+.statusSelector input[type='text']:disabled{
+    background-color: deeppink; color: white;
+}
+/*  ? input[type='text']:disabled는 동일한 input 속성의 태그 중
+    ? 수정 불가능한 상태의 input을 선택할 수 있다.(html 태그에도 attr 적용해주어야 함) */
