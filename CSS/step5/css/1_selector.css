@@ -123,3 +123,8 @@
 }
 /*  ? input[type='text']:disabled는 동일한 input 속성의 태그 중
     ? 수정 불가능한 상태의 input을 선택할 수 있다.(html 태그에도 attr 적용해주어야 함) */
+
+.normalSelector ul li{
+    float: left; margin: 0; padding: 15px; list-style: none;
+    border: 1px solid black;
+}
