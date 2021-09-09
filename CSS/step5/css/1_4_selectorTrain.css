@@ -34,3 +34,48 @@ form fieldset select{
     background-color: #555; color: white;
     border: 1px solid midnightblue; padding: 5px;
 }
+h2{
+    color: #555; text-transform: capitalize;
+    margin: 0 0 30px;
+}
+h2 strong{
+    color: #0092b5;
+}
+h2 strong:nth-child(2){
+    text-transform: uppercase;
+}
+ul{
+    margin: 0; padding: 0; list-style: none;
+}
+ul li{
+    position: relative;
+}
+ul li:first-child{
+    border-width: 2px 0 1px;
+    border-style: solid none;
+    border-color: darkred transparent;
+}
+ul li:not(:first-child){
+    border-bottom: 1px solid black;
+}
+ul li:nth-child(even){  /* ? = ul li:nth-child(2n) -> 수열을 활용한 선택자 */
+    background-color: #9a9a9a;
+}
+ul li:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+ul li span{
+    display: block; float: left;
+}
+ul li span:not(:nth-child(2)){
+    width: 15%;
+}
+ul li span:nth-child(2){
+    width: 35%;
+}
+ul li:first-child span{
+    padding: 20px 2.5%; font-size: 15px; font-weight: bold;
+}
+ul li:not(:first-child) span{
+    padding: 10px 2.5%;
+}
