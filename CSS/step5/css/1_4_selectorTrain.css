@@ -79,3 +79,40 @@ ul li:first-child span{
 ul li:not(:first-child) span{
     padding: 10px 2.5%;
 }
+ul li mark{
+    position: absolute; right: 0; top: 0; padding: 3px;
+    font-size: 9px; background-color: darkred; color: white;
+}
+/*  ? font-size는 웬만해서 12px 미만으로는 규정하지 않는게 좋음 */
+
+ul + div{
+    position: relative; width: 20%; min-width: 305px;
+    margin: 0 auto;
+}
+ul + div > a{
+    position: absolute; text-decoration: none;
+    top: 3px;
+}
+ul+div > a:first-child{
+    left: 0;
+    /* top: 3px; */
+}
+ul + div > a:nth-child(2){
+    right: 0;
+    /* top: 3px; */
+    /*  ? top 좌표는 중복되는 css이기 때문에 위 ul+div>a{}에 넣어주면
+        ?   중복된 불필요한 코드를 줄일 수 있음 */
+}
+ul+div ol{
+    display: block; padding: 0; text-align: center;
+}
+ul+div ol li{
+    display: inline-block;
+}
+ul+div ol li a{
+    text-decoration: none; font-size: 14px; color: #00556b;
+    display: block; padding: 5px;
+}
+ul+div ol li a:hover{
+    color: red;
+}
