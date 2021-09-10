@@ -1,0 +1,68 @@
+*{
+    margin: 0; padding: 0;
+}
+div{
+    margin-bottom: 30px;
+}
+.displayProperty span:first-child{
+    display: block; width: 50%;
+    background-color: #fc9393;
+}
+/*  ? display: block은 위에서 아래로 떨어지는 특성이 있고
+    ?   자동으로 width: 100%;를 가짐 */
+.displayProperty span:nth-child(2){
+    display: inline-block; background-color: #9393fc;
+    width: 25%;
+}
+/*  ? inline-block은 옆으로 붙으면서 본인의 공간을 가질 수 있지만
+    ?   따로 공간을 부여해주지 않으면 inline과 같은 모습 */
+.displayProperty span:nth-child(3){
+    display: inline; background-color: #93fc93;
+    width: 75%;
+}
+/*  ? inline은 width를 따로 주더라도 공간을 가지지 못함 */
+.displayProperty span:last-child{
+    display: none;
+}
+/*  ? display: none을 하면 구조가 사라짐 */
+
+.visibilityProperty span{
+    background-color: #ff6600; display: block;
+    border: 1px solid black;
+}
+.visibilityProperty span:first-child{
+    visibility: visible;
+}
+.visibilityProperty span:last-child{
+    visibility: hidden; height: 500px;
+}
+/*  ? visibility: hidden은 태그가 안보이게 숨겨주는 역할을 함
+    ! display: none은 태그가 가지고 있던 공간마저 없애지만
+    ! visibility: hidden은 태그가 가지고 있는 공간은 그대로 두고 숨겨주기만 함 */
+.opacityProperty{
+    width: 250px; height: 250px; background-color: darkred;
+}
+.opacityProperty span{
+    width: 150px; height: 150px; display: block;
+    background-color: darkblue; opacity: 0.3;
+    transition-duration: 1s;
+}
+.opacityProperty span:hover{
+    opacity: 1;
+}
+/*  ? opacity는 1 = 100%이고 불투명도를 조절할 수 있음 */
+.shadowProperty h1{
+    text-shadow: 5px 10px 10px rgba(0,0,0,0.5);
+}
+/*  ? text-shadow: x축 y축 번짐의정도 그림자색 
+    ?   rgba(red,green,blue,opacity) */
+.shadowProperty p:first-of-type{
+    box-shadow: 8px 10px 2px rgba(0,0,0,0.7);
+    border: 1px solid black; margin-bottom: 30px;
+}
+.shadowProperty p:last-of-type{
+    box-shadow: inset 8px 10px 2px rgba(0,0,0,0.7);
+    border: 1px solid red; height: 50px;
+}
+/*  ? box-shadow에 inset을 넣으면 그림자가 안쪽으로 적용이 되고
+    ?   outset을 따로 적지 않아도 자동으로 바깥으로 적용이 됨 */
