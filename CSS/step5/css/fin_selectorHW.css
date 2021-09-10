@@ -1,0 +1,90 @@
+body{
+    width: 70%; margin: 0 auto;
+}
+ul{
+    padding: 0;
+}
+ul li{
+    display: block; cursor: pointer;
+}
+ul li:first-child{
+    border: 1px solid #999; background-color: #666;
+}
+ul li:last-child{
+    border-bottom: 1px solid #999;
+}
+ul li:nth-child(2n+1):not(:first-child){
+    background-color: #e9e9e9;
+}
+ul li:nth-child(2n+3):hover{
+    background-color: #aee1ff;
+}
+ul li:nth-child(2n):hover{
+    background-color: #abf;
+}
+ul li:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+ul li span{
+    display: block; float: left; font-size: 14px; text-transform: capitalize;
+    padding: 15px 2%; box-sizing: border-box;
+}
+ul li span:nth-child(odd){
+    width: 15%;
+}
+ul li span:nth-child(2){
+    width: 40%;
+}
+ul li span:nth-child(4){
+    width: 20%;
+}
+ul li:first-child span:not(:nth-child(2)){
+    color: #bbb;
+}
+ul li:first-child span:nth-child(2){
+    color: #abf;
+}
+ul li:not(:first-child) span:not(:nth-child(2)){
+    color: #666;
+}
+ul li:not(:first-child) span:nth-child(2){
+    color: #09f;
+}
+ul+div{
+    position: relative; width: 70%; margin: 0 auto 25px;
+    padding: 0 3%;
+}
+ul + div a{
+    text-decoration: none; color: #666; display: block;
+    font-size: 16px;
+}
+ul+div > a{
+    position: absolute; line-height: 26px; top: 0;
+}
+ul+div > a:first-of-type{
+    left: 0;
+}
+ul+div > a:last-of-type{
+    right: 0;
+}
+ul+div ol{
+    display: block; text-align: center; padding: 0;
+}
+ul+div ol li{
+    display: inline-block; width: 8%;
+}
+ul+div ol li:hover{
+    background-color: #9df; border-radius: 5px;
+}
+ul+div ol li a{
+    text-align: center; padding: 5px 0;
+}
+form fieldset{
+    border: none; text-align: center;
+}
+form fieldset input[type="search"]{
+    border: 1px solid #e9e9e9;
+}
+form fieldset input[type="submit"]{
+    border: 1px solid #09f; border-radius: 2px;
+}
