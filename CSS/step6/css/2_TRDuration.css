@@ -47,5 +47,7 @@ body{
     transition-duration: 2s;
 }
 .durationEX4:hover{
-    
+    border-color: #00f200 #0099ff #0000ff #9900ff;
+    color: #0099ff;
+    margin-left: 25%;
 }

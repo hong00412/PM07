@@ -1,0 +1,11 @@
+
+
+
+
+/*  ? 우측 transition Content before 사용하여 문자 변경 */
+aside:last-of-type ul li a:before{
+    content: '+';
+}
+aside:last-of-type ul li:hover a:before{
+    content: '>';
+}

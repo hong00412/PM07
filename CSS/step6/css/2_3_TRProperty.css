@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+}
+.property{
+    width: 610px; margin: 0 auto;
+    border: 3px solid #3a00b6;
+}
+.property span{
+    display: block; width: 10px; height: 50px;
+    background-color: #0cf; margin: 5px;
+    transition-property: background-color, width;
+    transition-duration: 1s, 3s;
+}
+.property:hover span:nth-child(1){background-color: #f00; width: 100px;}
+.property:hover span:nth-child(2){background-color: #fa6600; width: 300px;}
+.property:hover span:nth-child(3){background-color: #ff0; width: 400px;}
+.property:hover span:nth-child(4){background-color: #0f0; width: 200px;}
+.property:hover span:nth-child(5){background-color: #aa00bb; width: 450px;}
+
+/*  ? transition-property는 원하는 속성값만을 정해 움직임을 줄 수 있고
+    ?   , 으로 구분해서 time을 다르게 줄 수도 있음
+    ? transition-property는 duration보다 위에 적는게 좋음
+    
+    ! transition도 숏핸드 방법으로 쓸 수 있음
+    ! transition: property duration timing-function; 순으로 작성
+    *   ex) transition: all 0.75s ease-in; */
