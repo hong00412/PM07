@@ -1,0 +1,41 @@
+div{
+    width: 200px; height: 200px;
+    border: 5px solid black;
+    margin: 0 auto;
+}
+div span{
+    width: 200px; height: 200px; display: block;
+    transform-origin: left top;
+}
+/*  ? transform-origin: 중심축 지정(default는 center) */
+div:nth-of-type(1) span{
+    background-color: red; transform: rotate(10deg);
+}
+div:nth-of-type(2) span{
+    background-color: green; transform: rotate(10deg) translateX(100px);
+}
+/*  ? transform은 여러가지 함수를 불러와 사용할 수 있기 때문에 중복으로 사용하지 않아야 함
+    ? translateX(100px): X좌표 선상에서 100px만큼 이동하겠다는 의미이나 rotate의 각도값대로
+    ?                    이동하기 때문에 원래의 X축 방향으로 이동시키고 싶으면
+    ?                     translateX를 rotate 앞에 두어야 함 */
+div:nth-of-type(3) span{
+    background-color: blue; transform: rotate(10deg) translateX(100px) translateY(50px);
+    color: white;
+}
+div:nth-of-type(4) span{
+    background-color: brown; color: white;
+    transform: rotate(10deg) translateX(100px) translateY(50px) skewX(10deg);
+}
+div:nth-of-type(5) span{
+    background-color: yellow;
+    transform: rotate(10deg) translate(100px, 50px) skew(10deg, 10deg);
+}
+/*  ? translate와 skew의 X, Y값을 통합해서 적을 때 값이 같다고 하더라도 통합해서 적으면 안됨
+    ?   ex) skew(10deg) -> X: 10deg, Y: 적용안됨 / skew(10deg, 10deg) -> X: 10deg, Y: 10deg */
+div:nth-of-type(6) span{
+    background-color: darkcyan;
+    transform: rotate(10deg) translate(100px, 50px) skew(10deg, 10deg) scale(1.2, 1.2);
+}
+/*  ? opacity: 1 = 100% 였던 것처럼 scale도 scale: 1 = 100% 로 사용
+    ?   but, opacity는 100% 이상 적어도 변화가 없지만 scale은 크기를 담당하기 때문에
+    ?        120%만큼 늘리고 싶으면 1.2 적어주면 적용되고 skew처럼 X, Y 구분해서 적어주어야 함 */

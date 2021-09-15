@@ -1,0 +1,48 @@
+*{
+    margin: 0; padding: 0;
+}
+body{
+    position: relative;
+}
+.circle{
+    position: absolute;
+    width: 200px; height: 200px; border-radius: 100px;
+    text-align: center;
+    background: linear-gradient(135deg, #b360cb 0%, #942277 100%);
+    /*  ?   linear-gradient(각도, 첫번째색상 시작위치, 두번째색상 시작위치, ...)  
+        ? background에서 linear/radial-gradient()로 배경색을 그라데이션 줄 수 있음
+        ? linear-gradient와 radial-gradient의 속성 순서는 같음  */
+    
+    animation-name: moveCircle;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+    /* ? animation-derection: reverse(역순운동 - 100% -> 0%)
+       ?                      alternate(왕복운동 - 0% -> 100% -> 0%)
+       ?                      alternate-reverse(역순왕복운동) */
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.circle:hover{
+    animation-play-state: paused;
+}
+.circle h1{
+    line-height: 200px;
+}
+@keyframes moveCircle{
+    0%{
+        left: 0; top: 0;
+        transform: rotate(0deg); 
+    }
+    50%{
+        left: 500px; top: 0; 
+        /* transform: rotate(360deg); */
+    }
+    100%{
+        left: 500px; top: 0; 
+        /* transform: rotate(0deg); */
+        transform: rotate(360deg);
+    }
+}
+
+/*  ? 0% = 시작점(from으로 대체해서 사용 가능)
+    ? 100% = 끝나는 지점(to로 대체해서 사용 가능) */
