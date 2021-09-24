@@ -1,0 +1,33 @@
+body{
+    width: 200px; margin: 200px auto;
+}
+div{
+    width: 200px; height: 200px; position: relative;
+    animation-name: playBox;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    transform-style: preserve-3d;
+}
+@keyframes playBox{
+    from{
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    to{
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+}
+
+div span{
+    width: 200px; height: 200px; display: block;
+    position: absolute; left: 0; top: 0;
+    opacity: 0.5; backface-visibility: hidden;
+}
+/*  ? backface-visibility: hidden
+    ?   -> 3D 구현할 때 뒷쪽에 있는 면을 보여주지 않음 */
+div span:nth-child(1){background-color: red; transform: rotateY(0deg) translate3D(0,0,100px);}
+div span:nth-child(2){background-color: green; transform: rotateY(90deg) translate3D(0,0,100px);}
+div span:nth-child(3){background-color: blue; transform: rotateY(180deg) translate3D(0,0,100px);}
+div span:nth-child(4){background-color: yellow; transform: rotateY(270deg) translate3D(0,0,100px);}
+div span:nth-child(5){background-color: darkorchid; transform: rotateX(90deg) translate3D(0,0,100px);}
+div span:nth-child(6){background-color: pink; transform: rotateX(270deg) translate3D(0,0,100px);}
