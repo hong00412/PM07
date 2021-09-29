@@ -1,0 +1,96 @@
+body{
+    background-color: #e4e5e7;
+}
+.mont{
+    font-family: 'Montserrat', sans-serif;
+}
+.crim{
+    font-family: 'Crimson Text', serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1280px){
+    header > div,
+    .paging{
+        max-width: 1170px; margin: 0 auto;
+    }
+
+    header{
+        background-color: white;
+        border-bottom: 1px solid #f0f2f7;
+    }
+    header > div:after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    header > div > *{
+        float: left;
+    }
+    header > div label.material-icons{
+        width: 5.3%; max-width: 60px; line-height: 90px;
+        border-right: 1px solid #f0f2f7; display: block;
+        box-sizing: border-box;
+    }
+    header > div h1{
+        width: 10.6%; min-width: 125px;
+    }
+    header > div h1 a{
+        display: block; padding: 32.5px 0; text-align: right;
+    }
+    header > div h1 a img{
+        width: 100%; max-width: 92px;
+    }
+    header > div nav{
+        width: 54.7%;
+    }
+    header > div nav ul{
+        text-align: right;
+    }
+    header > div nav ul li{
+        display: inline-block;
+    }
+    header > div nav ul li:not(:first-child){
+        margin-left: 2.56%;
+    }
+    header > div nav ul li a{
+        line-height: 90px; display: block; font-size: 14px;
+        color: #343e5c; font-weight: 700;
+    }
+    header > div div{
+        width: 29.4%; line-height: 90px; text-align: right;
+        color: #343e5c; font-size: 14px;
+    }
+    header > div div strong{
+        padding-left: 25px; line-height: 18px;
+        background: url('../images/bul_cart.png') no-repeat left top;
+    }
+    header > div div span{
+        width: 24px; line-height: 24px; background-color: #e3e8f0;
+        display: inline-block; text-align: center; border-radius: 12px;
+        font-weight: 700;  margin-left: 2%;
+    }
+    header > div div input[type='button']{
+        border: 2px solid #e3e8f0; background-color: transparent;
+        min-width: 85px; line-height: 28px; border-radius: 16px;
+        margin-left: 8%;
+    }
+    /* header fin */
+
+    .paging{
+        position: relative; background-color: white;
+        border-radius: 5px; clear: both;
+    }
+    .paging > a{
+        position: absolute; width: 16%; line-height: 90px;
+        text-align: center; font-size: 18px; font-weight: 700;
+        color: #343e5c;
+    }
+    .paging > a:first-of-type{
+        left: 0; top: 0; border-right: 1px solid #f0f2f7;
+    }
+    .paging > a:last-of-type{
+        right: 0; top: 0; border-left: 1px solid #f0f2f7;
+    }
+}
