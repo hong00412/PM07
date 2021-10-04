@@ -93,4 +93,16 @@ a{
     .paging > a:last-of-type{
         right: 0; top: 0; border-left: 1px solid #f0f2f7;
     }
+    .paging ol{
+        padding: 20px 17%; text-align: center;
+        box-sizing: border-box;
+    }
+    .paging ol li{
+        display: inline-block;
+    }
+    .paging ol li a{
+        width: 50px; line-height: 50px; display: block;
+        font-size: 14px; color: #3a405b; background-color: white;
+        border-radius: 25px; transition-duration: 0.5s;
+    }
 }
