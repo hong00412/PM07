@@ -1,0 +1,49 @@
+
+
+@media screen and (min-width: 1280px){
+    header + nav{
+        background-color: white;
+    }
+    header + nav .slideNav:after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    header + nav .slideNav > *{
+        float: left;
+    }
+    header + nav .slideNav ul{
+        width: 80%;
+    }
+    header + nav .slideNav ul li:not(:last-child){
+        float: left;
+    }
+    header + nav .slideNav ul li:last-child{
+        float: right;
+    }
+    header + nav .slideNav ul li:not(:first-child){
+        margin-left: 2.56%;
+    }
+    header + nav .slideNav ul li a{
+        display: block; font-size: 11px; color: #b9beb1;
+        font-weight: 700; line-height: 55px;
+    }
+    header + nav .slideNav ul li a:hover,
+    header + nav .slideNav ul li a.active{
+        color: #343e5c;
+    }
+    header + nav .slideNav input[type="search"]{
+        margin-left: 2.5%; width: 17.5%; padding: 20px 2% 20px 4%;
+        border-width: 0 1px; border-style: none solid; border-color: #f0f2f7;
+        background: url('../images/bul_search.png') no-repeat 12% center;
+    }
+    /*  ? slideNav fin */
+    section.slideArea{
+        background-color: #1c1e23; margin-bottom: 50px;
+    }
+    section.slideArea h2{
+        display: none;
+    }
+    section.slideArea div{
+        max-width: 1400px; margin: 0 auto; position: relative;
+    }
+}
+/*  ? desktop */
