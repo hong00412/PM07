@@ -25,11 +25,206 @@ a{
     text-decoration: none;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1279px){
+    header > div,
+    header + nav .slideNav,
+    .contentArea,
+    .paging,
+    section.bestArea,
+    section.tosayArea div,
+    footer div{
+        max-width: 728px; margin: 0 auto;
+    }
+
+    header{
+        background-color: white;
+        border-bottom: 1px solid #f0f2f7;
+    }
+    header > div:after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    header > div > *{
+        float: left;
+    }
+    header > div label.material-icons{
+        display: none;
+        /* width: 5.3%; max-width: 60px; line-height: 90px;
+        border-right: 1px solid #f0f2f7; display: block;
+        box-sizing: border-box; */
+    }
+    header > div h1{
+        /* width: 10.6%; */
+        width: 10%;
+        /* min-width: 125px; */
+        min-width: 92px;
+    }
+    header > div h1 a{
+        display: block;
+        /* padding: 32.5px 0; */
+        padding: 31px 0;
+        /* text-align: right; */
+    }
+    header > div h1 a img{
+        width: 100%; max-width: 92px;
+    }
+    header > div nav{
+        /* width: 54.7%; */
+        width: 60%;
+    }
+    header > div nav ul{
+        text-align: right;
+    }
+    header > div nav ul li{
+        display: inline-block;
+    }
+    header > div nav ul li:not(:first-child){
+        /* margin-left: 2.56%; */
+        margin-left: 2%;
+    }
+    header > div nav ul li a{
+        line-height: 90px; display: block;
+        /* font-size: 14px; */
+        font-size: 13px;
+        color: #343e5c; font-weight: 700;
+    }
+    header > div div{
+        /* width: 29.4%; */
+        width: 27%;
+        line-height: 90px; text-align: right;
+        color: #343e5c; font-size: 14px;
+    }
+    header > div div strong{
+        line-height: 18px;
+        /* padding-left: 25px;
+        background: url('../images/bul_cart.png') no-repeat left top; */
+    }
+    header > div div span{
+        width: 24px; line-height: 24px; background-color: #e3e8f0;
+        display: inline-block; text-align: center; border-radius: 12px;
+        font-weight: 700;  margin-left: 2%;
+    }
+    header > div div input[type='button']{
+        border: 2px solid #e3e8f0; background-color: transparent;
+        min-width: 85px; line-height: 28px; border-radius: 16px;
+        font-size: 11px;
+        /* margin-left: 8%; */
+        margin-left: 2%;
+    }
+    /* header fin */
+
+    .paging{
+        position: relative; background-color: white;
+        border-radius: 5px; clear: both;
+    }
+    .paging > a{
+        position: absolute; width: 16%; line-height: 90px;
+        text-align: center; font-size: 18px; font-weight: 700;
+        color: #343e5c;
+    }
+    .paging > a:first-of-type{
+        left: 0; top: 0; border-right: 1px solid #f0f2f7;
+    }
+    .paging > a:last-of-type{
+        right: 0; top: 0; border-left: 1px solid #f0f2f7;
+    }
+    .paging ol{
+        padding: 20px 17%; text-align: center;
+        box-sizing: border-box;
+    }
+    .paging ol li{
+        display: inline-block;
+    }
+    .paging ol li a{
+        width: 50px; line-height: 50px; display: block;
+        font-size: 14px; color: #3a405b; background-color: white;
+        border-radius: 25px; transition-duration: 0.5s; 
+    }
+    .paging ol li a:hover{
+        box-shadow: 0 5px 20px rgba(168,172,185,0.65);
+    }
+    /* ? pager fin */
+
+    footer{
+        background-color: #222328;
+    }
+    footer div{
+        position: relative;
+    }
+    footer div span{
+        position: absolute; display: block;
+    }
+    footer div:first-child{
+        padding: 60px 0; border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    footer div:first-child h2{
+        width: 7.86%; position: absolute; left: 2%;
+        max-width: 92px;
+    }
+    footer div:first-child ul{
+        padding: 0 10%; text-align: center;
+    }
+    footer div:first-child ul li{
+        display: inline-block;
+    }
+    footer div:first-child ul li:not(:first-child){
+        margin-left: 2.56%;
+    }
+    footer div:first-child ul li a{
+        display: block; color: white; font-size: 12px; font-weight: 700;
+    }
+    footer div:first-child span{
+        /* width: 8.54%; */
+        width: 12.54%;
+        /* right: 2%; */
+        right: 0;
+        top: 60px;
+    }
+    footer div:first-child span a{
+        display: inline-block; width: 24px; height: 18px;
+        background-repeat: no-repeat; background-position: center;
+        text-indent: -9999px;
+    }
+    footer div:first-child span a:not(:first-child){
+        margin-left: 2.4%;
+    }
+    footer div:first-child span a:nth-child(1){
+        background-image: url('../images/sns_twitter.png');
+    }    
+    footer div:first-child span a:nth-child(2){
+        background-image: url('../images/sns_facebook.png');
+    }
+    footer div:first-child span a:nth-child(3){
+        background-image: url('../images/sns_google.png');
+    }
+    footer div:last-child{
+        padding: 60px 0;
+    }
+    footer div:last-child p{
+        font-style: italic; font-size: 14px; width: 50%;
+        color: rgba(255,255,255,0.3); max-width: 510px;
+    }
+    footer div:last-child span{
+        /* right: 2%;  */
+        right: 0;
+        width: 50%; text-align: right; top: 60px;
+    }
+    footer div:last-child span a{
+        font-size: 11px; color: rgba(255,255,255,0.3);
+        display: inline-block;
+    }
+    footer div:last-child span a:last-of-type{
+        margin-left: 2.56%;
+    }
+}
+/* ? tablet */
+
 @media screen and (min-width: 1280px){
     header > div,
     header + nav .slideNav,
     .contentArea,
     .paging,
+    section.bestArea,
+    section.tosayArea div,
     footer div{
         max-width: 1170px; margin: 0 auto;
     }
@@ -192,3 +387,4 @@ a{
         margin-left: 2.56%;
     }
 }
+/* ? desktop */
